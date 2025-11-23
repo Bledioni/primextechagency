@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Logo from '../public/Logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +38,10 @@ const Navbar = () => {
             className="text-2xl font-bold text-deep-black cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            PrimexTech
+            <div style={{display:'flex' , alignItems:'center', gap:'1rem'}}>
+              <img width={'40px'} src={`${Logo}`} alt="" />
+              PrimexTech
+            </div>
           </motion.div>
           
           <div className="hidden md:flex space-x-8">

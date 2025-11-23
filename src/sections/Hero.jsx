@@ -41,9 +41,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <div className="w-32 h-32 mx-auto mb-8  rounded-lg flex items-center justify-center">
-            <img src={`${Logo}`} alt="" />
-          </div>
+          
         </motion.div>
 
         <motion.h1
